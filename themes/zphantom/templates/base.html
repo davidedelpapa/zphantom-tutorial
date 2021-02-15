@@ -21,16 +21,18 @@
 
 				{% block menu %}
 				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="/">Home</a></li>
-							{% set section = get_section(path="_index.md") %}
-							{% for page in section.pages %}
-							<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-							{% endfor %}
-						</ul>
-					</nav>
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="/">Home</a></li>
+						{% set blog_url = get_url(path="@/blog/_index.md") %}
+						<li><a href="{{ blog_url }}">Blog</a></li>
+						{% set section = get_section(path="_index.md") %}
+						{% for page in section.pages %}
+						<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</nav>
 				{% endblock menu %}
 				<!-- Main -->
 				{% block page_content %}

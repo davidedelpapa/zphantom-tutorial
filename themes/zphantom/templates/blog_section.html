@@ -6,7 +6,18 @@
     {% endif %}
 {% endblock title %}
 
-{% block menu %}{% endblock menu %}
+{% block menu %}
+<nav id="menu">
+	<h2>Menu</h2>
+	<ul>
+		<li><a href="/">Home</a></li>
+		{% set nav_section = get_section(path="_index.md") %}
+		{% for page in nav_section.pages %}
+		<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+{% endblock menu %}
 
 {% block page_content %}
 
@@ -38,10 +49,10 @@
                     <span class="image left"><img src="{{ resize_image(path=cover_path, width=150, height=150, op="fill") }}" alt="" /></span>
                 {% endif %}
                 <h2>{{ page.title | safe }}</h2>
-                {% if page.summary %}
-                    {{ page.summary | safe }}
-                {% elif page.extra.summary %}
-                {{ page.extra.summary | safe }}
+                {% if page.extra.summary %}
+                    {{ page.extra.summary | safe }}
+                {% elif page.summary %}
+                	{{ page.summary | safe }}
                 {% endif %}
             </p>
             <br/>
