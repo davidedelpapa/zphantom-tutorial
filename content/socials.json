@@ -1,0 +1,64 @@
+{
+    "style": "style2",
+    "socials": [{
+            "id": 1,
+            "icon": "brands fa-twitter",
+            "caption": "Twitter",
+            "link": "#"
+        },
+        {
+            "id": 2,
+            "icon": "brands fa-facebook-f",
+            "caption": "Facebook",
+            "link": "#"
+        },
+        {
+            "id": 3,
+            "icon": "brands fa-instagram",
+            "caption": "Instagram",
+            "link": "#"
+        },
+        {
+            "id": 4,
+            "icon": "brands fa-linkedin",
+            "caption": "Linkedin",
+            "link": "#"
+        },
+        {
+            "id": 5,
+            "icon": "brands fa-dribbble",
+            "caption": "Dribble",
+            "link": "#"
+        },
+        {
+            "id": 6,
+            "icon": "brands fa-github",
+            "caption": "GitHub",
+            "link": "#"
+        },
+        {
+            "id": 7,
+            "icon": "brands fa-500px",
+            "caption": "500px",
+            "link": "#"
+        },
+        {
+            "id": 8,
+            "icon": "solid fa-phone",
+            "caption": "Phone",
+            "link": "tel:001000000000"
+        },
+        {
+            "id": 9,
+            "icon": "brands fa-whatsapp",
+            "caption": "WhatsApp",
+            "link": "https://wa.me/10000000000?text=I'm%20interested"
+        },
+        {
+            "id": 10,
+            "icon": "solid fa-envelope",
+            "caption": "Email",
+            "link": "mailto:me@email.com"
+        }
+    ]
+}
